@@ -1,5 +1,5 @@
 body{
-    color: #1f4068;
+    color: #e43f5a;
     background-color: #162447;
     font-family:  'Boogaloo','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -26,7 +26,7 @@ h2{
     text-align:center;
     font-size: 1.2rem;
     border: 1px solid #111;
-    background-color: #e43f5a;
+    background-color: #1f4068;
     width: 8rem;
 }
 .userinput{
@@ -56,7 +56,7 @@ h2{
     padding: 1rem;
     border: 1px solid #444;
     border-radius: 50%;
-    background-color: #e43f5a;
+    background-color: #1f4068;
     margin: 0 0.5rem;
 }
 .userinput button:focus{
