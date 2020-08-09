@@ -2,29 +2,34 @@
 const btn1 = document.querySelector('#rock');
 btn1.addEventListener('click', () => {
     playRound("Rock", computerPlay())
-
+    choice1.src = "img/rock.png";
 });
 
 const btn2 = document.querySelector('#paper');
 btn2.addEventListener('click', () => {
     playRound("Paper", computerPlay())
-
+    choice1.src = "img/paper.png";
 });
 
 const btn3 = document.querySelector('#scissors');
 btn3.addEventListener('click', () => {
     playRound("Scissors", computerPlay())
-
+    choice1.src = "img/scissors.png";
 });
 
 const userScore = document.getElementById("userscore");
 const drawScore = document.getElementById("tie");
 const compScore = document.getElementById("computerscore");
+const choice1 = document.getElementById("select1");
+const choice2 = document.getElementById("select2");
 
 let tie = computer = user = 0;
 
 function computerPlay() {
     let choice = Math.floor(Math.random() * 3);
+    if (choice == 0) { choice2.src = "img/rockb.png" }
+    else if (choice == 1) { choice2.src = "img/paperb.png"; }
+    else { choice2.src = "img/scissorsb.png"; }
     return (choice == 0) ? "Rock" :
         (choice == 1) ? "Paper" :
             "Scissors";
